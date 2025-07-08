@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+header {
+    background: #2d87f0;
+    color: #fff;
+    padding: 20px 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.hero {
+    background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1000&q=80') center/cover no-repeat;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+.hero h2 {
+    font-size: 2.5rem;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.hero button {
+    background: #fff;
+    color: #2d87f0;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.hero button:hover {
+    background: #e0e0e0;
+}
+.services {
+    background: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+.services h2 {
+    margin-bottom: 40px;
+}
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+.service {
+    background: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(45,135,240,0.1);
+    flex-basis: 220px;
+    padding: 25px;
+    transition: transform 0.2s;
+}
+.service:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+.contact {
+    padding: 60px 0;
+    background: #ecf5fe;
+    text-align: center;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.contact input, .contact textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #b3d1f7;
+    font-size: 1rem;
+    font-family: inherit;
+}
+.contact textarea {
+    resize: vertical;
+    min-height: 80px;
+    max-height: 200px;
+}
+.contact button {
+    background: #2d87f0;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.contact button:hover {
+    background: #196fc1;
+}
+#formMessage {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #00b894;
+}
+footer {
+    background: #204e80;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 30px;
+}
+@media (max-width: 700px) {
+    .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav {
+        margin-top: 10px;
+    }
+}
